@@ -1,0 +1,168 @@
+body {
+	background-color: #efefef;
+}
+
+#gamePlaceHolder {
+	height: 97vh;
+	width: 97vw;
+	margin: auto;
+	display: inline-block;
+}
+
+#gameBoard {
+	z-index: 2;
+    width: 34%;
+    height: 0;
+    padding-bottom: 30%;
+	transform: rotate(45deg);
+	margin: auto;
+	margin-top: 7%;
+}
+
+#gamebordBack {
+	background-color: green;
+}
+
+.gameClusters {
+	display: flex;	
+	font-size: 90%;
+	font-weight: bold;
+	    text-align: center;
+}
+
+.cityName {
+	font-size: 60%;
+	color: black;
+}
+
+.rentalCost {
+	width: 100%;
+	border-top: solid 1px;
+	position: relative;
+	bottom: -1%;
+}
+
+.rentalCostM {
+	display: flex;
+}
+
+.cornerBlock {
+	width: 15%;
+    height: 0;
+    padding-bottom: 17%;
+	
+}
+
+.cityLvl {
+	display: inline-flex;
+}
+
+.cityBlockISLA {
+	background-color: orange;
+
+}
+
+.normalBlock {
+	width: 10%;
+    height: 0;
+    padding-bottom: 17%;
+    border: solid 1px;
+}
+
+.normalBlockM {
+	
+	width: 24%;
+    height: 0;
+    padding-bottom: 8.95%;
+    border: solid 1px;
+}
+.cityLvlBlock {
+	display: flex;
+	font-size: 90% !important;
+}
+
+.cityLvlBlock > .cityName {
+	font-size: 90% !important;
+	margin-left: 5px;
+}
+.cityLvlBlock > .playersInCity {
+	margin-left: 5px;
+}
+#startBlock {
+	background-color: yellow;
+	width: 100%;
+    height: 0;
+    padding-bottom: 117%;
+    border: solid 1px;
+}
+
+.colorOfThisBlock {
+	background-color: lightgrey;
+}
+
+.chance {
+	background-color: yellow;
+}
+
+.right {
+	float: right;
+	position: relative;
+	left: 51.3%
+}
+
+#N17 {
+	margin-top: 50%;
+}
+
+#N25 {
+	margin-top: 50%;
+}
+
+
+.playerIn {
+	width: 100%;
+    height: 0;
+    padding-bottom: 40%;
+	background-color: #25b9ff;
+}
+
+.playerName {
+	width: 100%;
+    height: 0;
+    padding-bottom: 10%;
+    border-bottom: solid 1px;
+    text-align: center;
+    font-size: 150%;
+}
+
+.money {
+	width: 100%;
+    height: 0;
+    padding-bottom: 12%;
+    border-bottom: solid 1px;
+    text-align: center;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.moneyAmmount {
+	text-align: left;
+	margin-left: 10%;
+	display: flex;
+}
+
+#player1 , #player3{
+	width: 25%;
+    height: 0;
+    padding-bottom: 10%;
+    border: solid 1px;
+    float: left;
+}
+
+#player2, #player4 {
+	width: 25%;
+    height: 0;
+    padding-bottom: 10%;
+    border: solid 1px;
+    float: right;
+}
