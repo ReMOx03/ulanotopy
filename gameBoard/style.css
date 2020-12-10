@@ -1,33 +1,39 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
 body {
 	background-color: #efefef;
+	overflow: hidden;
+	background: linear-gradient(white, #efefef);
 }
 
 #gamePlaceHolder {
-	height: 97vh;
-	width: 97vw;
-	margin: auto;
-	display: inline-block;
+	height: 100vh;
+	width: 100vw;
 }
 
 #gameBoard {
-	z-index: 2;
-    width: 34%;
-    height: 0;
-    padding-bottom: 30%;
-	transform: rotate(45deg);
-	margin: auto;
-	margin-top: 7%;
+	z-index: 99;
+	width: 34%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	position: absolute;
+	top: 50%;
+	left: 50%;
 }
 
 #gamebordBack {
 	background-color: green;
+	transform: perspective(2000px) rotate3d(1, -1, 0, 45deg);
+	box-shadow: 15px 15px 15px gray;
 }
 
 .gameClusters {
 	display: flex;	
 	font-size: 90%;
 	font-weight: bold;
-	    text-align: center;
+	text-align: center;
 }
 
 .cityName {
@@ -48,8 +54,8 @@ body {
 
 .cornerBlock {
 	width: 15%;
-    height: 0;
-    padding-bottom: 17%;
+	height: 0;
+	padding-bottom: 17%;
 	
 }
 
@@ -59,22 +65,21 @@ body {
 
 .cityBlockISLA {
 	background-color: orange;
-
 }
 
 .normalBlock {
 	width: 10%;
-    height: 0;
-    padding-bottom: 17%;
-    border: solid 1px;
+	height: 0;
+	padding-bottom: 17%;
+	border: solid 1px;
 }
 
 .normalBlockM {
 	
 	width: 24%;
-    height: 0;
-    padding-bottom: 8.95%;
-    border: solid 1px;
+	height: 0;
+	padding-bottom: 8.95%;
+	border: solid 1px;
 }
 .cityLvlBlock {
 	display: flex;
@@ -91,9 +96,9 @@ body {
 #startBlock {
 	background-color: yellow;
 	width: 100%;
-    height: 0;
-    padding-bottom: 117%;
-    border: solid 1px;
+	height: 0;
+	padding-bottom: 117%;
+	border: solid 1px;
 }
 
 .colorOfThisBlock {
@@ -118,51 +123,65 @@ body {
 	margin-top: 50%;
 }
 
-
 .playerIn {
 	width: 100%;
-    height: 0;
-    padding-bottom: 40%;
-	background-color: #25b9ff;
+	display: inline-flex;
+	font-size: 1.25vw;
+	font-family: 'Cabin', sans-serif;
+	text-align: center;
 }
 
 .playerName {
-	width: 100%;
-    height: 0;
-    padding-bottom: 10%;
-    border-bottom: solid 1px;
-    text-align: center;
-    font-size: 150%;
+	width: 50%;
+	padding: 10px 30px;
+	color: white;
+	border-bottom-left-radius: 40px;
+	border-top-left-radius: 40px;
+	text-shadow: 1px 1px 5px black;
 }
+
+#player1 .playerName { background: linear-gradient(to right, rgb(0, 132, 255), deepskyblue); }
+#player2 .playerName { background: linear-gradient(to right,rgb(255, 238, 0), orange); }
+#player3 .playerName { background: linear-gradient(to right, rgb(255, 0, 191), purple); }
+#player4 .playerName { background: linear-gradient(to right, #11998e, #38ef7d); }
 
 .money {
-	width: 100%;
-    height: 0;
-    padding-bottom: 12%;
-    border-bottom: solid 1px;
-    text-align: center;
-    font-size: 90%;
-    font-weight: bold;
+	width: 50%;
+	padding: 10px 0;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
 }
+
+#player1 .money { box-shadow: 0px 0px 15px deepskyblue; }
+#player2 .money { box-shadow: 0px 0px 15px orange; }
+#player3 .money { box-shadow: 0px 0px 15px purple; }
+#player4 .money { box-shadow: 0px 0px 15px #38ef7d; }
 
 .moneyAmmount {
-	text-align: left;
-	margin-left: 10%;
-	display: flex;
+	display: inline-flex;
 }
 
-#player1 , #player3{
-	width: 25%;
-    height: 0;
-    padding-bottom: 10%;
-    border: solid 1px;
-    float: left;
+.players > div {
+	position: fixed;
+	width: 20%;
 }
 
-#player2, #player4 {
-	width: 25%;
-    height: 0;
-    padding-bottom: 10%;
-    border: solid 1px;
-    float: right;
+#player1 {
+	top: 10px;
+	left: 10px;
+}
+
+#player2 {
+	top: 10px;
+	right: 10px;
+}
+
+#player3 {
+	bottom: 10px;
+	left: 10px;
+}
+
+#player4 {
+	bottom: 10px;
+	right: 10px;
 }

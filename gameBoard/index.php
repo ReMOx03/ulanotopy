@@ -4,6 +4,8 @@
 <head>
 	<title>Prototyp planszy</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wdth@90&display=swap" rel="stylesheet">
 	<meta charset="utf-8">
 </head>
 <body>
@@ -12,13 +14,12 @@
 			<div id="player1">
 				<div class="playerIn">
 					<div class="playerName">
-						
+						ReMOx
 					</div>
 					<div class="money">
-						Pieniądze: <br>
 						<div class="moneyAmmount">
-							<div class="moneyNumber">0</div>
 							<div>$</div>
+							<div class="moneyNumber">500k</div>
 						</div>
 					</div>
 				</div>
@@ -26,12 +27,38 @@
 			<div id="player2">
 				<div class="playerIn">
 					<div class="playerName">
+						Computer 1
 					</div>
 					<div class="money">
-						Pieniądze: <br>
 						<div class="moneyAmmount">
-							<div class="moneyNumber">0</div>
 							<div>$</div>
+							<div class="moneyNumber">500k</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="player3">
+				<div class="playerIn">
+					<div class="playerName">
+						Computer 2				
+					</div>
+					<div class="money">
+						<div class="moneyAmmount">
+							<div>$</div>
+							<div class="moneyNumber">500k</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="player4">
+				<div class="playerIn">
+					<div class="playerName">
+						Computer 3
+					</div>
+					<div class="money">
+						<div class="moneyAmmount">
+							<div>$</div>
+							<div class="moneyNumber">500k</div>
 						</div>
 					</div>
 				</div>
@@ -643,34 +670,6 @@
 					</div>
 				</div>
 			</div>
-			</div>
-		</div>
-		<div class="players">
-			<div id="player3">
-				<div class="playerIn">
-					<div class="playerName">				
-					</div>
-					<div class="money">
-						Pieniądze: <br>
-						<div class="moneyAmmount">
-							<div class="moneyNumber">0</div>
-							<div>$</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="player4">
-				<div class="playerIn">
-					<div class="playerName">
-					</div>
-					<div class="money">
-						Pieniądze: <br>
-						<div class="moneyAmmount">
-							<div class="moneyNumber">0</div>
-							<div>$</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
